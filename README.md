@@ -12,7 +12,7 @@ El patrón Singleton es útil en aquellos casos en los que se requiere tener una
 
  se presenta un ejemplo de implementación del patrón Singleton en Go, con el fin de brindar una guía útil para su aplicación en diferentes proyectos. Además, se incluyen comentarios y explicaciones detalladas para entender cómo funciona el patrón y cómo se puede adaptar a diferentes contextos y necesidades.
 
-### Factory
+## Factory
 Es un patrón creacional que proporciona una manera de crear objetos sin tener que especificar la clase exacta del objeto que se creará. En lugar de crear los objetos directamente, se delega la creación a una clase Factory que selecciona la subclase apropiada para crear el objeto.
 
 ###  Algunos casos donde puede ser útil utilizar el patrón Factory son:
