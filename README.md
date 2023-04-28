@@ -23,7 +23,7 @@ Es un patrón creacional que proporciona una manera de crear objetos sin tener q
 
 En resumen, el patrón Factory en Go es útil en situaciones donde se necesitan crear objetos de diferentes subclases relacionadas, se desea simplificar la creación de objetos y proporcionar una interfaz común para la creación de objetos de varias subclases.
 
-### Builder 
+## Builder 
 El patrón de diseño Builder es útil cuando necesitas construir objetos complejos con muchos componentes y configuraciones diferentes. En Go, puedes implementar este patrón creando un Builder que tenga métodos para configurar y construir el objeto final.
 
 La idea básica es que tengas un objeto Builder que tenga métodos para configurar cada parte del objeto final. Por ejemplo, si estás construyendo un objeto de tipo "Auto", el Builder podría tener métodos para establecer el modelo, el color, el tamaño del motor, la transmisión, etc.
@@ -35,6 +35,15 @@ Una vez que hayas configurado todos los componentes necesarios en el Builder, pu
 - Cuando los objetos que estás construyendo tienen muchos componentes y quieres simplificar el proceso de construcción.
 - Cuando necesitas crear objetos que tengan diferentes variantes o configuraciones, y quieres asegurarte de que cada variante se construya de manera consistente.
 - Cuando necesitas separar el proceso de construcción de un objeto de su representación final.
+
+## Prototype
+El patrón de diseño Prototype en Go es una técnica que nos permite crear nuevos objetos a partir de la clonación de un objeto ya existente. En lugar de crear un objeto desde cero, se copia un objeto existente y se modifica si es necesario.
+
+### Algunos ejemplos de situaciones en las que podrías utilizar este patrón son:
+
+- Cuando necesitamos crear muchos objetos similares, pero con algunas pequeñas diferencias. En lugar de crear cada objeto desde cero, se puede clonar un objeto existente y modificarlo según sea necesario.
+
+- Cuando queremos reducir la complejidad de la creación de objetos. Si la creación de un objeto implica muchas operaciones complejas, como la inicialización de muchos campos y la conexión a una base de datos, clonar un objeto ya existente puede ser una forma más sencilla y eficiente de crear nuevos objetos.
 
 
 ## Otros patrones de diseño
