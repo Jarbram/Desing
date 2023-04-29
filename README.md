@@ -45,6 +45,16 @@ El patrón de diseño Prototype en Go es una técnica que nos permite crear nuev
 
 - Cuando queremos reducir la complejidad de la creación de objetos. Si la creación de un objeto implica muchas operaciones complejas, como la inicialización de muchos campos y la conexión a una base de datos, clonar un objeto ya existente puede ser una forma más sencilla y eficiente de crear nuevos objetos.
 
+## Proxy
+Es un patrón estructural que te permite proporcionar un sustituto o representante de otro objeto para controlar el acceso a este objeto. El Proxy actúa como intermediario entre el cliente y el objeto real, lo que significa que el cliente interactúa con el Proxy y no con el objeto real directamente.
+En Go, el patrón Proxy se implementa mediante la creación de una estructura que actúa como Proxy y que tiene una referencia al objeto real. El Proxy imita la interfaz del objeto real y puede realizar cualquier lógica adicional antes o después de que se llame al objeto real.
+
+### Algunos ejemplos de situaciones en las que podrías utilizar este patrón son:
+
+- Un ejemplo común de uso del patrón de diseño Proxy en Go es cuando necesitas controlar el acceso a un recurso costoso en términos de tiempo o memoria. Por ejemplo, supongamos que tienes una aplicación que necesita acceder a una base de datos remota. Si se realizan muchas solicitudes a la base de datos, esto puede ralentizar la aplicación. En este caso, puedes implementar un Proxy que almacena en caché los resultados de las solicitudes a la base de datos y que solo llama al objeto real cuando los resultados no están disponibles en la caché.
+
+- Otro ejemplo de uso del patrón Proxy en Go es cuando necesitas restringir el acceso a un objeto real. Por ejemplo, supongamos que tienes un objeto que solo puede ser accedido por ciertos usuarios. En este caso, puedes implementar un Proxy que comprueba si el usuario tiene permiso para acceder al objeto antes de permitir el acceso.
+
 
 ## Otros patrones de diseño
 En este repositorio también se incluirán ejemplos y explicaciones de otros patrones de diseño comunes en Go, como Factory Method, Builder, Decorator, entre otros.
