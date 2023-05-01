@@ -55,7 +55,7 @@ En Go, el patrón Proxy se implementa mediante la creación de una estructura qu
 
 - Otro ejemplo de uso del patrón Proxy en Go es cuando necesitas restringir el acceso a un objeto real. Por ejemplo, supongamos que tienes un objeto que solo puede ser accedido por ciertos usuarios. En este caso, puedes implementar un Proxy que comprueba si el usuario tiene permiso para acceder al objeto antes de permitir el acceso.
 
-### Adapter
+## Adapter
 En Go, el patrón Adapter se implementa mediante la creación de una estructura que envuelve o adapta el objeto existente y que expone una nueva interfaz. El Adapter redirige las solicitudes de la nueva interfaz al objeto existente y las adapta para que sean comprensibles para ese objeto.
 
 - Un ejemplo común de uso del patrón de diseño Adapter en Go es cuando necesitas usar una biblioteca o clase existente en tu código, pero su interfaz no es compatible con tu código. En este caso, puedes crear un Adapter que envuelve la biblioteca o clase existente y que proporciona una interfaz compatible con tu código.
