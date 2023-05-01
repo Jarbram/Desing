@@ -63,3 +63,16 @@ En Go, el patrón Adapter se implementa mediante la creación de una estructura 
 
 ## Otros patrones de diseño
 En este repositorio también se incluirán ejemplos y explicaciones de otros patrones de diseño comunes en Go, como Factory Method, Builder, Decorator, entre otros.
+
+## Facade 
+El objetivo principal de Facade es proporcionar una interfaz simple para un conjunto complejo de clases, componentes o subsistemas, que de otra manera sería difícil de entender o utilizar. Este patrón se encuentra dentro de la categoría de patrones estructurales.
+
+La idea detrás del patrón Facade es que proporciona una capa adicional de abstracción para los clientes, que oculta la complejidad del subsistema subyacente. Los clientes pueden interactuar con la capa Facade para acceder a las funcionalidades del subsistema, en lugar de tener que interactuar directamente con las clases y componentes complejos que componen el subsistema.
+
+### Aquí te proporciono algunos ejemplos de situaciones en las que puede ser beneficioso utilizar el patrón de diseño Facade:
+
+- Cuando trabajas con un subsistema complejo: Si estás trabajando con un subsistema que es difícil de entender o tiene demasiadas clases y componentes complejos, entonces el patrón Facade puede ayudarte a ocultar esa complejidad detrás de una interfaz simple.
+- Cuando necesitas proporcionar una interfaz unificada: Si necesitas proporcionar una interfaz unificada a varios subsistemas diferentes, entonces puedes utilizar el patrón Facade para crear una interfaz simple que oculte las diferencias entre los subsistemas.
+- Cuando necesitas separar la implementación del cliente: Si deseas separar la implementación del cliente de la implementación del subsistema subyacente, entonces puedes utilizar el patrón Facade para proporcionar una capa adicional de abstracción.
+- Cuando necesitas reutilizar código existente: Si tienes un conjunto de clases y componentes existentes que se utilizan en diferentes subsistemas, puedes utilizar el patrón Facade para proporcionar una interfaz común para esos subsistemas.
+
