@@ -61,9 +61,6 @@ En Go, el patrón Adapter se implementa mediante la creación de una estructura 
 - Un ejemplo común de uso del patrón de diseño Adapter en Go es cuando necesitas usar una biblioteca o clase existente en tu código, pero su interfaz no es compatible con tu código. En este caso, puedes crear un Adapter que envuelve la biblioteca o clase existente y que proporciona una interfaz compatible con tu código.
 - Otro ejemplo de uso del patrón Adapter en Go es cuando necesitas hacer que varias clases con interfaces diferentes parezcan iguales para el cliente. En este caso, puedes crear un Adapter para cada clase que adapte su interfaz a una interfaz común para que el cliente pueda trabajar con ellas de la misma manera.
 
-## Otros patrones de diseño
-En este repositorio también se incluirán ejemplos y explicaciones de otros patrones de diseño comunes en Go, como Factory Method, Builder, Decorator, entre otros.
-
 ## Facade 
 El objetivo principal de Facade es proporcionar una interfaz simple para un conjunto complejo de clases, componentes o subsistemas, que de otra manera sería difícil de entender o utilizar. Este patrón se encuentra dentro de la categoría de patrones estructurales.
 
@@ -75,4 +72,27 @@ La idea detrás del patrón Facade es que proporciona una capa adicional de abst
 - Cuando necesitas proporcionar una interfaz unificada: Si necesitas proporcionar una interfaz unificada a varios subsistemas diferentes, entonces puedes utilizar el patrón Facade para crear una interfaz simple que oculte las diferencias entre los subsistemas.
 - Cuando necesitas separar la implementación del cliente: Si deseas separar la implementación del cliente de la implementación del subsistema subyacente, entonces puedes utilizar el patrón Facade para proporcionar una capa adicional de abstracción.
 - Cuando necesitas reutilizar código existente: Si tienes un conjunto de clases y componentes existentes que se utilizan en diferentes subsistemas, puedes utilizar el patrón Facade para proporcionar una interfaz común para esos subsistemas.
+
+## Bridge
+El patrón de diseño Bridge es un patrón estructural que se utiliza para desacoplar una abstracción de su implementación subyacente, lo que permite que ambas puedan variar independientemente. Se logra mediante la creación de dos jerarquías de clases separadas: una para la abstracción y otra para la implementación.
+
+¿Cómo funciona el patrón de diseño Bridge?
+El patrón de diseño Bridge se compone de los siguientes elementos:
+
+Abstracción: Define la interfaz para la abstracción, mantiene una referencia a un objeto de la implementación y delega todo el trabajo real a ese objeto.
+Implementación: Define la interfaz para la implementación y proporciona una implementación concreta de esa interfaz.
+Implementador concreto: Proporciona una implementación concreta de la interfaz de la implementación.
+Abstracción refinada: Extiende la interfaz de la abstracción proporcionando funcionalidad adicional que depende de la implementación subyacente.
+Implementador refinado: Extiende la interfaz de la implementación proporcionando una funcionalidad adicional que depende de la abstracción.
+La idea básica es que la abstracción delega a la implementación cualquier trabajo real que necesite hacer. La implementación proporciona la funcionalidad real, mientras que la abstracción proporciona una interfaz simplificada y unificada para el cliente.
+
+### El patrón de diseño Bridge es útil cuando:
+
+- Quieres separar la interfaz de una clase de su implementación subyacente.
+- Quieres que las clases de la interfaz y la implementación varíen independientemente.
+- Quieres ocultar la complejidad de una clase detrás de una interfaz más simple.
+
+## Otros patrones de diseño
+En este repositorio también se incluirán ejemplos y explicaciones de otros patrones de diseño comunes en Go, como Factory Method, Builder, Decorator, entre otros.
+
 
