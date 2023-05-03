@@ -92,6 +92,18 @@ La idea básica es que la abstracción delega a la implementación cualquier tra
 - Quieres que las clases de la interfaz y la implementación varíen independientemente.
 - Quieres ocultar la complejidad de una clase detrás de una interfaz más simple.
 
+## Composite 
+Es un patrón estructural que te permite tratar a los objetos individuales y a los grupos de objetos de la misma manera.
+
+En Go, el patrón Composite se implementa creando una interfaz común para los objetos individuales y los grupos de objetos. Esta interfaz común permite a los clientes tratar a los objetos individuales y a los grupos de objetos de la misma manera, lo que simplifica el código y lo hace más fácil de mantener.
+
+### Aquí te proporciono algunos ejemplos de situaciones en las que puede ser beneficioso utilizar:
+- Un ejemplo común de uso del patrón de diseño Composite en Go es cuando necesitas trabajar con una jerarquía de objetos que forman una estructura de árbol. En este caso, puedes usar el patrón Composite para tratar a los nodos individuales del árbol y a los subárboles como si fueran objetos individuales.
+- Otro ejemplo de uso del patrón Composite en Go es cuando necesitas aplicar una operación a una colección de objetos, pero algunos de los objetos pueden ser colecciones en sí mismos. En este caso, puedes usar el patrón Composite para tratar a todos los objetos como si fueran individuales, independientemente de si son objetos individuales o colecciones.
+
+Al usar el patrón Composite en Go, puedes escribir un código más genérico y reutilizable, lo que facilita la incorporación de nuevas funcionalidades o cambios en la estructura de objetos. Además, puedes evitar la duplicación de código y reducir la complejidad del código al tratar todos los objetos de la misma manera.
+Es importante tener en cuenta que, al igual que con cualquier patrón de diseño, el patrón Composite no es la solución a todos los problemas de diseño. Debes considerar cuidadosamente si el patrón Composite es la mejor opción para tu problema específico antes de implementarlo.
+
 ## Otros patrones de diseño
 En este repositorio también se incluirán ejemplos y explicaciones de otros patrones de diseño comunes en Go, como Factory Method, Builder, Decorator, entre otros.
 
