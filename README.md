@@ -104,6 +104,13 @@ En Go, el patrón Composite se implementa creando una interfaz común para los o
 Al usar el patrón Composite en Go, puedes escribir un código más genérico y reutilizable, lo que facilita la incorporación de nuevas funcionalidades o cambios en la estructura de objetos. Además, puedes evitar la duplicación de código y reducir la complejidad del código al tratar todos los objetos de la misma manera.
 Es importante tener en cuenta que, al igual que con cualquier patrón de diseño, el patrón Composite no es la solución a todos los problemas de diseño. Debes considerar cuidadosamente si el patrón Composite es la mejor opción para tu problema específico antes de implementarlo.
 
+## Decorator
+El patrón de diseño Decorator es utilizado para añadir funcionalidades adicionales a un objeto existente en tiempo de ejecución, sin modificar la estructura básica del objeto. En Go, se puede implementar utilizando interfaces y tipos que implementan dichas interfaces.
+El patrón Decorator se compone de dos partes principales: el componente y el decorador. El componente es la clase base que se desea decorar, y el decorador es una clase que envuelve al componente, añadiendo o modificando su comportamiento.
+Para implementar el patrón Decorator en Go, primero debes crear una interfaz que defina el comportamiento común a todos los componentes y decoradores. Luego, debes crear una clase base que implemente esta interfaz. A continuación, puedes crear clases decoradoras que envuelvan la clase base, añadiendo funcionalidades adicionales.
+
+Una situación común en la que se puede implementar el patrón Decorator es cuando tienes un objeto con un comportamiento básico, pero necesitas añadir funcionalidades adicionales de manera dinámica, sin tener que modificar la clase original. Por ejemplo, puedes usar el patrón Decorator para añadir funcionalidades de logging a una aplicación, sin tener que modificar la lógica de la aplicación original.
+
 ## Otros patrones de diseño
 En este repositorio también se incluirán ejemplos y explicaciones de otros patrones de diseño comunes en Go, como Factory Method, Builder, Decorator, entre otros.
 
