@@ -111,6 +111,15 @@ Para implementar el patrón Decorator en Go, primero debes crear una interfaz qu
 
 Una situación común en la que se puede implementar el patrón Decorator es cuando tienes un objeto con un comportamiento básico, pero necesitas añadir funcionalidades adicionales de manera dinámica, sin tener que modificar la clase original. Por ejemplo, puedes usar el patrón Decorator para añadir funcionalidades de logging a una aplicación, sin tener que modificar la lógica de la aplicación original.
 
+## Observer 
+El patrón de diseño Observer en Go permite a un objeto observar a otro objeto y recibir notificaciones cuando el objeto observado cambia su estado. Es decir, cuando el objeto observado cambia, notifica automáticamente a sus observadores registrados.
+
+El patrón Observer se compone de dos partes principales: el objeto observado (también conocido como sujeto o publicador) y los objetos observadores (también conocidos como suscriptores o listeners). El objeto observado mantiene una lista de sus observadores registrados y notifica automáticamente a todos ellos cuando cambia su estado.
+
+Para implementar el patrón Observer en Go, primero debes definir una interfaz que defina los métodos necesarios para el objeto observado y los observadores. Luego, debes crear una clase observada que implemente esta interfaz y mantenga una lista de sus observadores registrados. Cuando el estado de la clase observada cambia, debe notificar a todos sus observadores registrados. Los objetos observadores pueden registrarse para recibir notificaciones y deben implementar la misma interfaz que la clase observada.
+
+- Una situación común en la que se puede implementar el patrón Observer es cuando tienes un objeto cuyo estado cambia con frecuencia y necesitas notificar a otros objetos cuando esto sucede. Por ejemplo, puedes usar el patrón Observer para notificar a diferentes partes de una aplicación cuando ocurre un evento específico, como cuando se actualiza una base de datos o se recibe un mensaje de un servidor.
+
 ## Otros patrones de diseño
 En este repositorio también se incluirán ejemplos y explicaciones de otros patrones de diseño comunes en Go, como Factory Method, Builder, Decorator, entre otros.
 
