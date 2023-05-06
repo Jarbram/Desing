@@ -120,7 +120,18 @@ Para implementar el patrón Observer en Go, primero debes definir una interfaz q
 
 - Una situación común en la que se puede implementar el patrón Observer es cuando tienes un objeto cuyo estado cambia con frecuencia y necesitas notificar a otros objetos cuando esto sucede. Por ejemplo, puedes usar el patrón Observer para notificar a diferentes partes de una aplicación cuando ocurre un evento específico, como cuando se actualiza una base de datos o se recibe un mensaje de un servidor.
 
+## Chain Of Responsability 
+Es un patrón de comportamiento que te permite encadenar varios objetos de procesamiento que manejan una solicitud, y cada objeto decide si puede manejar la solicitud o si debe pasarla al siguiente objeto en la cadena.
+
+En el patrón Chain of Responsibility, cada objeto procesador tiene un puntero al siguiente objeto en la cadena. Si un objeto no puede manejar la solicitud, la pasa al siguiente objeto en la cadena. Este proceso continúa hasta que la solicitud es manejada o hasta que se alcanza el final de la cadena.
+
+### Aquí te proporciono algunos ejemplos de situaciones en las que puede ser beneficioso utilizar:
+- Un sistema de aprobación de gastos en una empresa, donde cada solicitud de gasto puede ser manejada por diferentes niveles de autoridad. Por ejemplo, las solicitudes menores a $100 pueden ser aprobadas por un gerente de departamento, mientras que las solicitudes mayores a $1000 deben ser aprobadas por el director financiero.
+- Un sistema de detección de fraudes en una aplicación de comercio electrónico, donde las transacciones sospechosas pueden ser manejadas por diferentes reglas de negocio. Por ejemplo, una transacción que proviene de un país diferente al de la dirección de envío puede ser manejada por una regla de negocio específica para detectar fraudes internacionales.
+- Un sistema de manejo de errores en una aplicación, donde los errores pueden ser manejados por diferentes módulos o componentes. Por ejemplo, un error en la capa de presentación puede ser manejado por un componente específico para manejar errores de interfaz de usuario, mientras que un error en la capa de base de datos puede ser manejado por un componente específico para manejar errores de acceso a datos.
+
+En resumen, el patrón de diseño Chain of Responsibility es útil en situaciones donde se necesita procesar una serie de solicitudes o eventos que pueden ser manejados por diferentes objetos, y se desea evitar acoplar estos objetos directamente entre sí.
+
 ## Otros patrones de diseño
 En este repositorio también se incluirán ejemplos y explicaciones de otros patrones de diseño comunes en Go, como Factory Method, Builder, Decorator, entre otros.
-
 
