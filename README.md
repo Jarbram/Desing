@@ -132,6 +132,13 @@ En el patrón Chain of Responsibility, cada objeto procesador tiene un puntero a
 
 En resumen, el patrón de diseño Chain of Responsibility es útil en situaciones donde se necesita procesar una serie de solicitudes o eventos que pueden ser manejados por diferentes objetos, y se desea evitar acoplar estos objetos directamente entre sí.
 
-## Otros patrones de diseño
-En este repositorio también se incluirán ejemplos y explicaciones de otros patrones de diseño comunes en Go, como Factory Method, Builder, Decorator, entre otros.
+## State
+El patrón de diseño State en Go permite que un objeto altere su comportamiento cuando su estado interno cambia. Se basa en la idea de que un objeto puede tener múltiples estados, cada uno de los cuales se comporta de manera diferente. En lugar de usar múltiples sentencias condicionales en el código para cambiar el comportamiento, el patrón State utiliza una clase de estado separada para cada estado posible.
 
+En términos simples, el patrón State permite que un objeto cambie su comportamiento en función de su estado actual. El objeto delega el comportamiento a una instancia de una clase de estado, y esta instancia puede cambiar según el estado actual del objeto.
+
+### Aquí te proporciono algunos ejemplos de situaciones en las que puede ser beneficioso utilizar:
+- Control de acceso a una aplicación: Una aplicación que requiere autenticación de usuario puede usar el patrón State para cambiar su comportamiento según si el usuario ha iniciado sesión o no. Cuando el usuario inicia sesión, la aplicación cambia a un estado autenticado y muestra funciones adicionales, como la opción de cambiar la contraseña o cerrar sesión.
+- Reproductor multimedia: Un reproductor multimedia que cambia su comportamiento según el estado del archivo que se está reproduciendo podría utilizar el patrón State. Cuando se reproduce un archivo de audio, el reproductor cambia a un estado de reproducción de audio y muestra controles de reproducción de audio. Si se reproduce un archivo de video, el reproductor cambia a un estado de reproducción de video y muestra controles de reproducción de video.
+- Procesamiento de pedidos: Un sistema de procesamiento de pedidos podría utilizar el patrón State para cambiar el estado del pedido según su progreso. Por ejemplo, cuando un pedido se recibe, su estado cambia a "pedido recibido". Cuando se procesa el pago, su estado cambia a "pago recibido". Cuando el pedido se envía, su estado cambia a "enviado".
+- Comportamiento de un robot: Un robot que realiza diferentes tareas podría utilizar el patrón State para cambiar su comportamiento en función de la tarea actual. Cuando el robot está recogiendo objetos, su estado cambia a "recogiendo objetos" y usa un conjunto de comportamientos específicos para esa tarea. Cuando el robot está entregando objetos, su estado cambia a "entregando objetos" y usa un conjunto diferente de comportamientos para esa tarea.
